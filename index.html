@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Christianah Adeyemo - Website Developer, Website Designer</title>
+    <title>
+      Christianah Adeyemo - Frontend Website Developer, Website Designer
+    </title>
   </head>
   <body>
     <nav class="navigation container">
       <h1 class="logo">christianah<span>.</span></h1>
       <ul class="middle-nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Portfolio</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
       </ul>
       <button class="contact-button">Let's Talk</button>
     </nav>
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="left">
         <p class="greeting">Hi, I'm Christianah,</p>
-        <h1>Frontend Web Designer & <span>Developer</span></h1>
+        <div class="front-end-container">
+          <h1>Frontend Web Designer & Developer</h1>
+        </div>
         <p class="mini-about">
           I design and build beautiful websites for businesses around the globe.
-          If you need a modern and powerful website, send me an email. If we are
-          a good fit, I will give you a time and cost estimate.
+          For a modern website, send me an email, and If we are a good fit, I
+          will give you a time and cost estimate.
         </p>
-        <button>Hire Me</button>
+        <a
+          href="mailto:christianah123.ac@gmail.com?subject=I have a job for you&body=Some body text here"
+          class="hire-me-button"
+          >Hire Me</a
+        >
       </div>
       <div class="right">
         <img
@@ -55,7 +63,7 @@
       <div class="decorative-line"></div>
     </aside>
 
-    <section class="about-me container">
+    <section class="about-me container" id="about">
       <h5>About Me.</h5>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -118,7 +126,7 @@
       </div>
     </section>
 
-    <section class="portfolio container">
+    <section class="portfolio container" id="portfolio">
       <h5>Portfolio.</h5>
       <article>
         <div class="image-container">

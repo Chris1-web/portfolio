@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,8 +57,12 @@ li {
 nav > .middle-nav {
   display: flex;
   gap: 1rem;
+}
+
+nav > .middle-nav a {
+  text-decoration: none;
   color: var(--nav-light-black);
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 /* hero section  */
@@ -86,27 +91,36 @@ section.hero-section > .left > p:first-child {
   opacity: 0.7;
 }
 
-section.hero-section > .left > h1 {
+section.hero-section > .left .front-end-container {
+  position: relative;
+  height: 5.5rem;
+  width: 200%;
+}
+
+section.hero-section > .left h1 {
+  position: absolute;
   font-size: 4rem;
   font-family: "Roboto Slab", serif;
   color: var(--dark-main-color);
-  position: relative;
+  /* position: relative; */
 }
 
-section.hero-section > .left > h1 > span {
+/* section.hero-section > .left > h1 > span {
   position: absolute;
   left: 95%;
-}
+} */
 
 section.hero-section > .left > p.mini-about {
   font-size: 2rem;
   color: var(--nav-light-black);
   opacity: 0.7;
-  padding-bottom: 1.4rem;
+  padding-bottom: 1.7rem;
   line-height: 1.4;
 }
 
-section.hero-section > .left > button {
+section.hero-section > .left > a.hire-me-button {
+  font-size: 1.5rem;
+  text-decoration: none;
   padding: 1rem 4rem;
   border: none;
   background-color: var(--button-dark-background);
@@ -259,7 +273,7 @@ section.portfolio article h4 {
 section.portfolio article a {
   text-decoration: none;
   cursor: pointer;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-color: transparent;
 }
 
@@ -314,6 +328,7 @@ footer .left {
 }
 
 footer .copyright {
+  padding-top: 10rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -341,6 +356,10 @@ footer ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+footer .right ul.links-list {
+  gap: 2.5rem;
 }
 
 footer li > a {
