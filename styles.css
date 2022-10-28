@@ -76,6 +76,7 @@ button.contact-button {
 section.hero-section {
   display: flex;
   align-items: center;
+  gap: 1.2rem;
   padding: 5rem 5rem;
 }
 
@@ -102,13 +103,7 @@ section.hero-section > .left h1 {
   font-size: 4rem;
   font-family: "Roboto Slab", serif;
   color: var(--dark-main-color);
-  /* position: relative; */
 }
-
-/* section.hero-section > .left > h1 > span {
-  position: absolute;
-  left: 95%;
-} */
 
 section.hero-section > .left > p.mini-about {
   font-size: 2rem;
