@@ -253,7 +253,7 @@
     font-size: 1.7rem;
   }
   section.portfolio a.view-more-link {
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 2rem;
   }
 }
