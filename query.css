@@ -1,0 +1,249 @@
+@media (max-width: 1154px) {
+  section.portfolio article {
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
+  section.portfolio article img,
+  section.portfolio article > .project-information {
+    max-width: 40rem;
+  }
+
+  section.about-me > p {
+    font-size: 1.8rem;
+    padding: 2rem 7rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  section.hero-section {
+    padding: 3rem;
+  }
+  section.hero-section > .left h1 {
+    font-size: 3.4rem;
+  }
+  section.hero-section > .left > p:first-child {
+    font-size: 2.5rem;
+  }
+  section.hero-section > .left > p.mini-about,
+  section.portfolio article h4 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+  section.about-me,
+  section.tools,
+  section.portfolio,
+  footer.footer {
+    padding: 3rem;
+  }
+  section.portfolio article h2 {
+    font-size: 3.5rem;
+  }
+  section.portfolio article p,
+  section.portfolio article .buttons a:first-child,
+  section.portfolio article .buttons a:nth-child(2) {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1035px) {
+  section.hero-section {
+    padding: 5rem 0rem 5rem 5rem;
+  }
+  div.right > img {
+    width: 80%;
+  }
+  section.about-me > p {
+    font-size: 1.6rem;
+    padding: 2rem 9rem;
+  }
+  section.about-me > h5,
+  section.tools h5,
+  section.portfolio > h5 {
+    font-size: 2.5rem;
+  }
+  section.portfolio article img,
+  section.portfolio article > .project-information {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 877px) {
+  section.hero-section > .left h1 {
+    font-size: 3.1rem;
+  }
+  section.hero-section > .left .front-end-container {
+    height: 4.5rem;
+  }
+  section.hero-section > .left > p:first-child {
+    font-size: 2.1rem;
+  }
+  section.hero-section > .left > p.mini-about,
+  section.portfolio article h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 857px) {
+  section.hero-section {
+    flex-direction: column;
+    padding: 5rem;
+  }
+  section.hero-section > .left,
+  section.hero-section > .left .front-end-container {
+    padding: 0;
+    width: 100%;
+  }
+  section.hero-section > .left h1 {
+    font-size: 3.5rem;
+  }
+  section.hero-section > .left > p:first-child {
+    font-size: 2.5rem;
+  }
+  section.hero-section > .left > p.mini-about {
+    font-size: 1.6rem;
+  }
+  section.hero-section > .left .front-end-container {
+    height: 5.5rem;
+  }
+  div.right > img {
+    width: 100%;
+  }
+  section.portfolio article {
+    padding: 2rem;
+  }
+  aside.social-contacts {
+    padding-left: 1.2rem;
+  }
+  section.about-me > p {
+    padding: 2rem 3rem;
+  }
+  section.hero-section > .left .front-end-container,
+  section.hero-section > .left h1 {
+    position: static;
+  }
+  section.hero-section .right {
+    display: flex;
+    justify-content: flex-start;
+  }
+  section.portfolio article img,
+  section.portfolio article > .project-information {
+    width: 30rem;
+  }
+}
+
+/* @media(max-width:720px){
+  implement handburger menu
+} */
+
+@media (max-width: 702px) {
+  section.hero-section > .left h1 {
+    font-size: 3rem;
+  }
+  section.hero-section > .left > p:first-child {
+    font-size: 1.8rem;
+  }
+
+  section.portfolio {
+    flex-direction: column;
+  }
+  section.portfolio article img,
+  section.portfolio article > .project-information {
+    width: 25rem;
+  }
+  section.portfolio article h2 {
+    font-size: 2.5rem;
+  }
+  section.portfolio article p,
+  section.portfolio article .buttons a:first-child,
+  section.portfolio article .buttons a:nth-child(2) {
+    font-size: 1.2rem;
+  }
+  section.hero-section > .left .front-end-container {
+    height: 4.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  section.hero-section > .left .front-end-container {
+    height: 8.5rem;
+  }
+  section.hero-section > .left h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+  }
+  section.hero-section > .left > p:first-child {
+    font-size: 2rem;
+  }
+  section.portfolio article {
+    flex-direction: column;
+  }
+  section.portfolio article:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+  section.portfolio article img,
+  section.portfolio article > .project-information {
+    width: 50rem;
+  }
+  section.portfolio article h2 {
+    font-size: 3rem;
+  }
+  section.portfolio article {
+    align-items: center;
+  }
+  section.portfolio article p,
+  section.portfolio article .buttons a:first-child,
+  section.portfolio article .buttons a:nth-child(2) {
+    font-size: 1.7rem;
+  }
+  section.portfolio a.view-more-link {
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .navigation .logo,
+  nav > .middle-nav,
+  nav a.contact-button {
+    font-size: 1.3rem;
+  }
+  nav a.contact-button {
+    padding: 0.5rem 1rem;
+  }
+  section.hero-section > .left h1 {
+    font-size: 2.5rem;
+  }
+  section.hero-section > .left .front-end-container {
+    height: 7rem;
+  }
+  section.hero-section {
+    padding: 3rem;
+  }
+  section.hero-section > .left > p.mini-about {
+    font-size: 1.3rem;
+  }
+  section.hero-section .right {
+    padding-top: 1.5rem;
+  }
+  section.about-me > p {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  section.tools img {
+    width: 5rem;
+  }
+  section.tools img.firebase {
+    height: 5rem;
+  }
+  section.portfolio article img,
+  section.portfolio article > .project-information {
+    width: 35rem;
+  }
+  footer.footer {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: center;
+  }
+}

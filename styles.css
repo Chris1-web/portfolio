@@ -129,10 +129,10 @@ section.hero-section > .left h1 {
 }
 
 section.hero-section > .left > p.mini-about {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--nav-light-black);
   opacity: 0.7;
-  padding-bottom: 1.7rem;
+  padding-bottom: 3.2rem;
   line-height: 1.4;
 }
 
@@ -154,7 +154,8 @@ div.right > img {
 aside.social-contacts {
   height: 100vh;
   position: fixed;
-  top: 63%;
+  /* top: 63%; */
+  bottom: -65%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,7 +175,7 @@ section.about-me,
 section.tools,
 section.portfolio,
 footer.footer {
-  padding: 7rem 7rem;
+  padding: 5rem;
 }
 
 section.about-me > h5,
@@ -188,8 +189,8 @@ section.portfolio > h5 {
 }
 
 section.about-me > p {
-  font-size: 2rem;
-  padding: 2rem 8rem;
+  font-size: 2.3rem;
+  padding: 2rem 4rem;
   opacity: 0.7;
 }
 
@@ -239,9 +240,10 @@ section.tools .bottom-tools > div > p {
 section.portfolio article {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-size: 2rem;
-  gap: 10rem;
-  padding: 2rem 0;
+  gap: 1rem;
+  padding: 2rem 4rem;
 }
 
 section.portfolio article img {
