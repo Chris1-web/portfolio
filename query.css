@@ -132,9 +132,55 @@
   }
 }
 
-/* @media(max-width:720px){
-  implement handburger menu
-} */
+@media (max-width: 765px) {
+  /* implement handburger menu */
+  aside.social-contacts {
+    display: none;
+  }
+  .navigation .logo {
+    font-size: 2rem;
+  }
+  nav .handburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  nav > .middle-nav,
+  nav a.contact-button {
+    display: none;
+    transition: all 300ms ease-in;
+  }
+  nav > .middle-nav.show {
+    display: flex !important;
+    position: fixed;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    gap: 2rem;
+    left: 45%;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.5rem;
+  }
+  nav > .middle-nav.show a {
+    color: var(--plain-white);
+  }
+
+  nav a.contact-button.show {
+    display: flex !important;
+    position: fixed;
+    flex-direction: column;
+    left: 45%;
+    bottom: 10%;
+    color: var(--plain-white);
+    border: 0.2rem solid var(--plain-white);
+    background-color: transparent;
+    z-index: 1;
+    font-size: 3rem;
+    padding: 1.5rem 2rem;
+  }
+}
 
 @media (max-width: 702px) {
   section.hero-section > .left h1 {
@@ -204,14 +250,6 @@
 }
 
 @media (max-width: 420px) {
-  .navigation .logo,
-  nav > .middle-nav,
-  nav a.contact-button {
-    font-size: 1.3rem;
-  }
-  nav a.contact-button {
-    padding: 0.5rem 1rem;
-  }
   section.hero-section > .left h1 {
     font-size: 2.5rem;
   }

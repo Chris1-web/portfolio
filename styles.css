@@ -17,6 +17,10 @@ body {
   font-family: "Lora", serif;
 }
 
+.blur {
+  filter: blur(0.5rem);
+}
+
 :root {
   --light-background: #fff9fc;
   --nav-light-black: #343b42;
@@ -92,6 +96,65 @@ nav a.contact-button {
   color: var(--dark-main-color);
   border: none;
   background-color: var(--plain-white);
+}
+
+nav .handburger-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+nav .handburger-menu .top,
+nav .handburger-menu .middle,
+nav .handburger-menu .bottom {
+  width: 4rem;
+  height: 0.5rem;
+  background-color: var(--button-dark-background);
+  transition: all 300ms ease-in;
+}
+
+nav .handburger-menu .top.down {
+  transform: translateY(200%);
+}
+nav .handburger-menu .top.bend {
+  transform: translateY(200%) rotate(45deg);
+}
+
+nav .handburger-menu .middle.down {
+  opacity: 0;
+}
+
+nav .handburger-menu .bottom.down {
+  transform: translateY(-200%);
+}
+nav .handburger-menu .bottom.bend {
+  transform: translateY(-200%) rotate(-45deg);
+}
+
+.mobile-nav-container {
+  transition: all 300ms ease-in;
+}
+
+.mobile-nav-container.left {
+  transition: all 50ms ease-in;
+}
+
+.mobile-nav-container.show,
+.mobile-nav-container.left.show {
+  position: fixed;
+  width: 70%;
+  height: 100vh;
+  top: 0%;
+  right: 0%;
+  background-color: #6b342b;
+  z-index: 1;
+}
+
+.mobile-nav-container.left.show {
+  width: 30%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.448);
+  filter: blur(0.5);
 }
 
 /* hero section  */
