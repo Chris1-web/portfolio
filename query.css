@@ -86,7 +86,7 @@
 
 @media (max-width: 857px) {
   section.hero-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 5rem;
   }
   section.hero-section > .left,

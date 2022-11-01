@@ -30,6 +30,7 @@ body {
   --plain-black: #000;
   --button-dark-background: #6d2012;
   --project-gray: #6d7d8b;
+  --gold-hair: rgb(230, 104, 89);
 }
 
 .container {
@@ -208,8 +209,12 @@ section.hero-section > .left > a.hire-me-button {
   color: var(--plain-white);
 }
 
+section.hero-section .right {
+  /* padding: ; */
+}
+
 div.right > img {
-  border: 0.1rem solid #343b4283;
+  border: 0.8rem dotted var(--gold-hair);
   border-radius: 50%;
 }
 
