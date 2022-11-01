@@ -209,10 +209,6 @@ section.hero-section > .left > a.hire-me-button {
   color: var(--plain-white);
 }
 
-section.hero-section .right {
-  /* padding: ; */
-}
-
 div.right > img {
   border: 0.8rem dotted var(--gold-hair);
   border-radius: 50%;

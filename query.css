@@ -135,13 +135,13 @@
   section.portfolio article > .project-information {
     width: 30rem;
   }
-  section.portfolio article > .project-information,
+  /* section.portfolio article > .project-information,
   section.about-me > p {
     text-align: center;
-  }
-  section.portfolio article ul {
+  } */
+  /* section.portfolio article ul {
     justify-content: center;
-  }
+  } */
 }
 
 @media (max-width: 765px) {
