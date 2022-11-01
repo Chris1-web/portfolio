@@ -140,26 +140,18 @@ nav .handburger-menu .bottom.bend {
   transition: all 50ms ease-in;
 }
 
-.mobile-nav-container.show,
-.mobile-nav-container.left.show {
+.mobile-nav-container.show {
   position: fixed;
-  width: 70%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   top: 0%;
   right: 0%;
-  background-color: #6b342b;
+  background-color: var(--nav-light-black);
   z-index: 1;
-}
-
-.mobile-nav-container.left.show {
-  width: 30%;
-  left: 0%;
-  background-color: rgba(255, 255, 255, 0.448);
-  filter: blur(0.5);
+  opacity: 0.9;
 }
 
 /* hero section  */
-
 section.hero-section {
   display: flex;
   align-items: center;
@@ -218,7 +210,7 @@ div.right > img {
 aside.social-contacts {
   height: 100%;
   position: fixed;
-  bottom: -65%;
+  bottom: -67%;
   display: flex;
   flex-direction: column;
   align-items: center;

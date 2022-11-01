@@ -78,10 +78,13 @@
   section.hero-section > .left > p:first-child {
     font-size: 2.1rem;
   }
-  /* section.hero-section > .left > p.mini-about,
-  section.portfolio article h4 {
-    font-size: 1.4rem;
-  } */
+}
+
+@media (max-width: 920px) {
+  aside.social-contacts {
+    padding-left: 1.2rem;
+    top: 81%;
+  }
 }
 
 @media (max-width: 857px) {
@@ -119,6 +122,8 @@
   }
   aside.social-contacts {
     padding-left: 1.2rem;
+    top: 79%;
+    bottom: 0;
   }
   section.about-me > p {
     padding: 2rem 3rem;
@@ -135,16 +140,9 @@
   section.portfolio article > .project-information {
     width: 30rem;
   }
-  /* section.portfolio article > .project-information,
-  section.about-me > p {
-    text-align: center;
-  } */
-  /* section.portfolio article ul {
-    justify-content: center;
-  } */
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   /* implement handburger menu */
   aside.social-contacts {
     display: none;
@@ -166,10 +164,9 @@
     display: flex !important;
     position: fixed;
     flex-direction: column;
-    width: 45%;
+    width: 90%;
     align-items: center;
     gap: 2rem;
-    left: 45%;
     z-index: 2;
     top: 50%;
     transform: translateY(-50%);
@@ -183,7 +180,7 @@
     display: flex !important;
     position: fixed;
     flex-direction: column;
-    left: 45%;
+    left: 50%;
     bottom: 10%;
     color: var(--plain-white);
     border: 0.2rem solid var(--plain-white);
@@ -191,6 +188,7 @@
     z-index: 1;
     font-size: 3rem;
     padding: 1.5rem 2rem;
+    transform: translateX(-50%);
   }
 }
 
@@ -290,6 +288,21 @@
   footer.footer {
     flex-direction: column-reverse;
     gap: 1rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 280px) {
+  section.hero-section > .left .front-end-container {
+    height: 9rem;
+  }
+  section.tools img {
+    width: 3rem;
+  }
+  section.tools img.firebase {
+    height: 3rem;
+  }
+  section.tools > .tools-container {
     align-items: center;
   }
 }
