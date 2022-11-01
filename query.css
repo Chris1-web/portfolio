@@ -34,7 +34,7 @@
   section.tools,
   section.portfolio,
   footer.footer {
-    padding: 3rem;
+    padding: 2rem;
   }
   section.portfolio article h2 {
     font-size: 3.5rem;
@@ -78,10 +78,10 @@
   section.hero-section > .left > p:first-child {
     font-size: 2.1rem;
   }
-  section.hero-section > .left > p.mini-about,
+  /* section.hero-section > .left > p.mini-about,
   section.portfolio article h4 {
     font-size: 1.4rem;
-  }
+  } */
 }
 
 @media (max-width: 857px) {
@@ -94,14 +94,19 @@
     padding: 0;
     width: 100%;
   }
+  section.hero-section > .left {
+    text-align: center;
+  }
   section.hero-section > .left h1 {
     font-size: 3.5rem;
   }
   section.hero-section > .left > p:first-child {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   section.hero-section > .left > p.mini-about {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    line-height: 1.4;
   }
   section.hero-section > .left .front-end-container {
     height: 5.5rem;
@@ -251,7 +256,7 @@
 
 @media (max-width: 420px) {
   section.hero-section > .left h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   section.hero-section > .left .front-end-container {
     height: 7rem;
@@ -259,14 +264,11 @@
   section.hero-section {
     padding: 3rem;
   }
-  section.hero-section > .left > p.mini-about {
-    font-size: 1.3rem;
-  }
   section.hero-section .right {
     padding-top: 1.5rem;
   }
   section.about-me > p {
-    font-size: 1rem;
+    font-size: 1.7rem;
     padding: 2rem;
   }
   section.tools img {
