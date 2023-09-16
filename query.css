@@ -1,14 +1,7 @@
 @media (max-width: 1154px) {
-  section.portfolio article {
-    gap: 1rem;
-    justify-content: space-around;
+  section.hero-section {
+    text-align: center;
   }
-
-  section.portfolio article img,
-  section.portfolio article > .project-information {
-    max-width: 40rem;
-  }
-
   section.about-me > p {
     font-size: 1.8rem;
     padding: 2rem 7rem;
@@ -26,23 +19,10 @@
     font-size: 2.5rem;
   }
   section.hero-section > .left > p.mini-about,
-  section.portfolio article h4 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-  }
   section.about-me,
   section.tools,
-  section.portfolio,
   footer.footer {
     padding: 2rem;
-  }
-  section.portfolio article h2 {
-    font-size: 3.5rem;
-  }
-  section.portfolio article p,
-  section.portfolio article .buttons a:first-child,
-  section.portfolio article .buttons a:nth-child(2) {
-    font-size: 1.5rem;
   }
 }
 
@@ -58,13 +38,8 @@
     padding: 2rem 9rem;
   }
   section.about-me > h5,
-  section.tools h5,
-  section.portfolio > h5 {
+  section.tools h5 {
     font-size: 2.5rem;
-  }
-  section.portfolio article img,
-  section.portfolio article > .project-information {
-    width: 35rem;
   }
 }
 
@@ -89,36 +64,52 @@
 
 @media (max-width: 857px) {
   section.hero-section {
-    flex-direction: column-reverse;
-    padding: 5rem;
+    padding: 2.5rem;
   }
-  section.hero-section > .left,
-  section.hero-section > .left .front-end-container {
-    padding: 0;
-    width: 100%;
-  }
-  section.hero-section > .left {
+
+  section > div.bottom {
     text-align: center;
+    font-size: 5rem;
   }
-  section.hero-section > .left h1 {
-    font-size: 3.5rem;
+
+  section > div.bottom > a {
+    width: 35%;
   }
-  section.hero-section > .left > p:first-child {
-    font-size: 1.8rem;
+
+  section.about-me h4 {
+    font-size: 6rem;
   }
-  section.hero-section > .left > p.mini-about {
-    font-size: 1.7rem;
-    padding-top: 1rem;
-    line-height: 1.4;
+
+  section.about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
   }
-  section.hero-section > .left .front-end-container {
-    height: 5.5rem;
+
+  section .about-me-container {
+    align-items: center;
+  }
+
+  section.about-me img {
+    border-radius: 100%;
+    width: 25rem;
+    transform: rotate(15deg);
+  }
+
+  section.about-me a {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--dark-main-color);
+    color: var(--plain-white);
+    font-size: 2rem;
+    width: 30%;
+    box-shadow: 10px 5px 5px var(--project-gray);
+    border: 0.2rem solid transparent;
+    border-radius: 5rem;
   }
   div.right > img {
     width: 100%;
-  }
-  section.portfolio article {
-    padding: 2rem;
   }
   aside.social-contacts {
     padding-left: 1.2rem;
@@ -136,44 +127,34 @@
     display: flex;
     justify-content: flex-start;
   }
-  section.portfolio article img,
-  section.portfolio article > .project-information {
-    width: 30rem;
+
+  section.portfolio article {
+    flex-direction: column;
+  }
+
+  section.portfolio article#exclusive {
+    flex-direction: column-reverse;
+  }
+
+  section.portfolio article.left-aligned {
+    flex-direction: column-reverse;
+  }
+
+  section.portfolio article > .project-information,
+  section.portfolio article.left-aligned > .project-information {
+    position: static;
+  }
+
+  section.final-contact a {
+    max-width: 20%;
   }
 }
 
 @media (max-width: 768px) {
-  /* implement handburger menu */
-  aside.social-contacts {
-    display: none;
-  }
-  .navigation .logo {
-    font-size: 2rem;
-  }
-  nav .handburger-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
   nav > .middle-nav,
   nav a.contact-button {
     display: none;
     transition: all 300ms ease-in;
-  }
-  nav > .middle-nav.show {
-    display: flex !important;
-    position: fixed;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    gap: 2rem;
-    z-index: 2;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3.5rem;
-  }
-  nav > .middle-nav.show a {
-    color: var(--plain-white);
   }
 
   nav a.contact-button.show {
@@ -200,21 +181,6 @@
     font-size: 1.8rem;
   }
 
-  section.portfolio {
-    flex-direction: column;
-  }
-  section.portfolio article img,
-  section.portfolio article > .project-information {
-    width: 25rem;
-  }
-  section.portfolio article h2 {
-    font-size: 2.5rem;
-  }
-  section.portfolio article p,
-  section.portfolio article .buttons a:first-child,
-  section.portfolio article .buttons a:nth-child(2) {
-    font-size: 1.2rem;
-  }
   section.hero-section > .left .front-end-container {
     height: 4.5rem;
   }
@@ -233,28 +199,6 @@
   }
   section.portfolio article {
     flex-direction: column;
-  }
-  section.portfolio article:nth-child(3) {
-    flex-direction: column-reverse;
-  }
-  section.portfolio article img,
-  section.portfolio article > .project-information {
-    width: 50rem;
-  }
-  section.portfolio article h2 {
-    font-size: 3rem;
-  }
-  section.portfolio article {
-    align-items: center;
-  }
-  section.portfolio article p,
-  section.portfolio article .buttons a:first-child,
-  section.portfolio article .buttons a:nth-child(2) {
-    font-size: 1.7rem;
-  }
-  section.portfolio a.view-more-link {
-    justify-content: flex-start;
-    font-size: 2rem;
   }
 }
 
@@ -280,10 +224,6 @@
   }
   section.tools img.firebase {
     height: 5rem;
-  }
-  section.portfolio article img,
-  section.portfolio article > .project-information {
-    width: 35rem;
   }
   footer.footer {
     flex-direction: column-reverse;

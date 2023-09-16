@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  /* background-color: var(--light-background); */
   font-family: "Lora", serif;
 }
 
@@ -205,61 +204,6 @@ section > div.bottom > a {
   text-align: center;
 }
 
-/* section.hero-section {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  padding: 5rem 5rem;
-}
-
-section.hero-section > .left {
-  padding-left: 7rem;
-  width: 50%;
-}
-
-section.hero-section > .left > p:first-child {
-  font-size: 3rem;
-  font-weight: 400;
-  color: var(--dark-main-color);
-  opacity: 0.7;
-}
-
-section.hero-section > .left .front-end-container {
-  position: relative;
-  height: 5.5rem;
-  width: 200%;
-}
-
-section.hero-section > .left h1 {
-  position: absolute;
-  font-size: 4rem;
-  font-family: "Roboto Slab", serif;
-  color: var(--dark-main-color);
-}
-
-section.hero-section > .left > p.mini-about {
-  font-size: 1.8rem;
-  color: var(--nav-light-black);
-  opacity: 0.7;
-  padding-bottom: 3.2rem;
-  line-height: 1.4;
-}
-
-section.hero-section > .left > a.hire-me-button {
-  font-size: 1.5rem;
-  text-decoration: none;
-  padding: 1rem 4rem;
-  border: none;
-  background-color: var(--button-dark-background);
-  color: var(--plain-white);
-  border-radius: 0.4rem;
-}
-
-div.right > img {
-  border: 0.8rem dotted var(--gold-hair);
-  border-radius: 50%;
-} */
-
 /* fixed aside links */
 aside.social-contacts {
   height: 100%;
@@ -312,7 +256,8 @@ section.about-me img {
   opacity: 0.8;
 }
 
-section.about-me button {
+section.about-me a {
+  text-align: center;
   padding: 1rem 2rem;
   background-color: var(--dark-main-color);
   color: var(--plain-white);
@@ -329,22 +274,6 @@ section .about-me-container {
   gap: 1.5rem;
 }
 
-/* section.about-me > h5,
-section.tools h5,
-section.portfolio > h5 {
-  font-size: 3rem;
-  color: var(--dark-main-color);
-  opacity: 0.5;
-  text-decoration-line: underline;
-  text-decoration-thickness: 0.1rem;
-}
-
-section.about-me > p {
-  font-size: 2.3rem;
-  padding: 2rem 4rem;
-  opacity: 0.7;
-} */
-
 /* tools */
 section.tools {
   text-align: center;
@@ -354,7 +283,6 @@ section.tools > .tools-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
-  width: 60%;
 }
 section.tools > .tools-container svg {
   width: 10rem;
@@ -363,47 +291,6 @@ section.tools > .tools-container svg {
   justify-self: center;
   padding: 1rem;
 }
-
-/* section.tools img {
-  width: 7rem;
-  height: auto;
-}
-
-section.tools img.firebase {
-  height: 7rem;
-}
-
-section.tools > .tools-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-section.tools > .tools-container {
-  padding: 2rem 0;
-}
-
-section.tools .top-tools,
-section.tools .bottom-tools {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.5rem;
-}
-
-section.tools .top-tools > div,
-section.tools .bottom-tools > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-section.tools .top-tools > div > p,
-section.tools .bottom-tools > div > p {
-  opacity: 0.7;
-} */
 
 /* portfolio */
 section.portfolio article {
@@ -534,11 +421,12 @@ section.final-contact h2 {
 }
 
 section.final-contact {
-  font-size: 7rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-section.final-contact button {
-  width: 10%;
+section.final-contact a {
+  max-width: 13%;
   padding: 1rem 2rem;
   border: 0.2rem solid var(--dark-main-color);
   background-color: transparent;
