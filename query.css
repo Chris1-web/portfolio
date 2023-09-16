@@ -64,27 +64,45 @@
 
 @media (max-width: 857px) {
   section.hero-section {
-    padding: 2.5rem;
+    padding: 1rem;
+  }
+
+  section > div.top .greeting {
+    font-size: 2rem;
+  }
+
+  section.tools > .tools-container svg {
+    width: fit-content;
+  }
+
+  section.portfolio article > .image-container {
+    padding: 2rem 0;
+    width: 80vw;
+  }
+
+  section.portfolio article img {
+    width: 100%;
   }
 
   section > div.bottom {
     text-align: center;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   section > div.bottom > a {
-    width: 35%;
+    width: 50%;
+    font-size: 1.2rem;
   }
 
   section.about-me h4 {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   section.about-me {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 
   section .about-me-container {
@@ -103,7 +121,7 @@
     background-color: var(--dark-main-color);
     color: var(--plain-white);
     font-size: 2rem;
-    width: 30%;
+    width: 50%;
     box-shadow: 10px 5px 5px var(--project-gray);
     border: 0.2rem solid transparent;
     border-radius: 5rem;
@@ -132,6 +150,10 @@
     flex-direction: column;
   }
 
+  section.tools > .tools-container {
+    gap: 1rem;
+  }
+
   section.portfolio article#exclusive {
     flex-direction: column-reverse;
   }
@@ -143,10 +165,45 @@
   section.portfolio article > .project-information,
   section.portfolio article.left-aligned > .project-information {
     position: static;
+    width: 80vw;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+  }
+
+  section.portfolio article > .project-information .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  section.portfolio article ul {
+    flex-wrap: wrap;
+  }
+
+  section.portfolio article .buttons a:first-child,
+  section.portfolio article .buttons a:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  section.portfolio article .buttons a:first-child {
+    font-size: 1rem;
+  }
+
+  section.portfolio article h2 {
+    font-size: 2rem;
+  }
+
+  section.final-contact {
+    gap: 1rem;
   }
 
   section.final-contact a {
-    max-width: 20%;
+    max-width: 50%;
+  }
+
+  section.final-contact h2 {
+    font-size: 7.5rem;
   }
 }
 
