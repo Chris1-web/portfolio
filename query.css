@@ -72,7 +72,7 @@
   }
 
   section.tools > .tools-container svg {
-    width: fit-content;
+    /* width: fit-content; */
   }
 
   section.portfolio article > .image-container {
@@ -152,6 +152,7 @@
 
   section.tools > .tools-container {
     gap: 1rem;
+    max-width: 80vw;
   }
 
   section.portfolio article#exclusive {
